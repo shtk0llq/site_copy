@@ -41,6 +41,25 @@ footer p {
   font-weight: bold;
 }
 
+.main_visual {
+  text-align: center;
+  background-image: url("/img/main-vsual-nontitle.png");
+  background-size: cover;
+  padding: 128px 0;
+}
+
+.main_visual_title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px
+}
+
+.main_visual_text {
+  font-weight: bold;
+  margin-top: 32px;
+  line-height: 24px;
+}
+
 .section {
   padding: 64px 0;
 }
@@ -96,4 +115,55 @@ footer p {
   padding: 20px 72px;
   margin-top: 24px;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 5%;
+  }
+
+  header {
+    display: block;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .menu {
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  
+  .main_visual_text {
+    font-weight: normal;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about_text {
+    letter-spacing: 3px;
+    margin-top: 24px;
+  }
+
+  .course_list {
+    display: grid;
+  }
+
+  .course_list p {
+    margin-top: 8px;
+  }
+  
+  .contact_input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 32px;
+  }
+
+  .contact_button {
+    width: 100%;
+  }
 }
